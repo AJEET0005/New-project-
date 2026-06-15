@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom smooth transitions */
+.accent-glow-snow {
+  box-shadow: 0 0 20px rgba(186, 230, 253, 0.4);
+}
+
+.accent-glow-balloon {
+  box-shadow: 0 0 25px rgba(251, 113, 133, 0.3);
+}
+
+/* Custom keyframes for physics wobble slightly if needed, but motion/react is preferred and cleaner */
